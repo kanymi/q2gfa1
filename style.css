@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navlinks{
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#sitename{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px){
+    nav{ 
+        position: relative; 
+        background-color: rgba(0, 0, 0, 1);
+    }
+    #sitename{
+        padding: 1vw;
+        color: white;
+        transition: .5s;
+    }
+    .navlinks{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: rgb(0, 0, 0, 1);
+        min-width: 100vw;
+        transition: .5s;
+    }
+    nav a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+        transition: .5s;
+        margin-left: 0;
+        padding-left: 1vh;}
+    
+    .navlinks a:hover{background-color: #ddd; transition: .5s;}
+    nav:hover .navlinks{display: block; transition: .5s;}
+    nav:hover #sitename{background-color: #2e73eb; transition: .5s;}
+}
+
+nav{
+    justify-content: space-evenly;
+    width: 100vw;
+    display: flex;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+nav a{
+    margin: 0.2vw;
+    background-color: rgba(19, 19, 19, 0);
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color: rgb(202, 202, 202);
+    transition: 0.5s;
+    background-color: rgba(31, 31, 31, 0.488);
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1; 
+}
+
+.text{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 10vw;
+    background-color: rgba(106, 106, 106, 0.41);
+    padding: 3vw;
+}
+
+.header{
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+article{
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding-right: 30vw;
+}
+
+footer{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 5vw;
+    position: relative;
+    bottom: 0vw;
+    background-color: rgba(106, 106, 106, 0.41);
+}
+
+#tw{
+	background: url('media/sprite3.png') no-repeat -66px -72px;
+	width: 67px;
+	height: 66px;
+}
+
+#yt{
+	background: url('media/sprite3.png') no-repeat -439px -221px;
+	width: 66px;
+	height: 66px;
+}
+
+#in {
+	background: url('media/sprite3.png') no-repeat -290px -221px;
+	width: 66px;
+	height: 66px;
+}
+
+#fb {
+	background: url('media/sprite3.png') no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+
